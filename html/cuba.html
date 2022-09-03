@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cuba</title>
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+	<!-- For social media icons -->
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+	<!-- My files -->
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+</head>
+
+
+<div class="background">
+	<body data-spy="scroll" data target="#navbarResponsive"> <!-- data-spy="scroll" data target="#navbarResponsive" This is to keep the header as we keep scrolling --> 
+
+	<!-- Navigation --> 
+	<nav class="navbar navbar-expand-lg" role ="navigation">  
+	<a class="navbar-brand" href="#"><i class="fa fa-camera-retro" aria-hidden="true" ></i><h5>Zeina <br> Adi</h5></a>
+	<div class = "navbar-header">
+		<button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class ="fa fa-bars"></i>
+		<!--For disability -->
+			<span class = "sr-only">Toggle navigation</span>
+			<span class = "icon-bar"></span>
+			<span class = "icon-bar"></span>
+			<span class = "icon-bar"></span>
+		</button>
+		
+	</div>
+
+	<div class ="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" data-toggle = "dropdown"> Visited Destinations </a>
+				<div class="dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
+					<a class = "dropdown-item" href = "#">Cuba</a>
+					<a class = "dropdown-item" href = "mexico.html">Mexico</a>
+					<a class = "dropdown-item" href = "canada.html">Canada</a>
+				</div>
+			</li>
+
+			<li class="nav-item"><a class="nav-link" href="dream_destinations.html">Dream Destinations</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+			
+		</ul>
+	</div>
+</nav>
+	<!-- Navigation ENDS--> 
+
+	<div class = "header-text">
+		<h1>Cayo Coco, Cuba</h1>
+		<center><h4>March, 2017</h4></center>
+	</div>
+</div>
+<!-- END header -->
+
+
+<!-- Photo Gallery Cuba --> 
+<div class="photo-gallery">
+<div class="roww">
+	<div class="column">
+	<button class ="xbutton" onclick="resetImg()">X</button>
+	<img src="../images/visited_destinations/cuba1.jpg" alt = "Cuba 1" onclick = "enlargeImg()" id = "img1">
+	<img src="../images/visited_destinations/cuba2.jpg" alt = "Cuba 2">
+	<img src="../images/visited_destinations/cuba3.jpg" alt = "Cuba 3">
+	<img src="../images/visited_destinations/cuba4.jpg" alt = "Cuba 4">
+	</div>
+
+	<div class="column">
+
+		<img src="../images/visited_destinations/cuba5.jpg" alt = "Cuba 5">
+		<img src="../images/visited_destinations/cuba6.jpg" alt = "Cuba 6">
+		<img src="../images/visited_destinations/cuba7.jpg" alt = "Cuba 7">
+	</div>
+</div>
+</div>
+<!-- END Photo Gallery Cuba --> 
+
+
+
+<!-- Start Footer -->
+<footer class>
+	<div class="strip">©2020 by Zeina Adi.</div>
+
+</footer>
+<!-- End Footer -->
+
+
+<script>
+img = document.getElementById("img1");
+function enlargeImg(){
+	img.style.transform = "scale(1.5)";
+	img.style.transition = "transform 0.25s ease";
+	xbutton.style.visibility = "visible";
+}
+
+function resetImg(){
+	img.style.transform = "scale(1);"
+	img.style.transition = "transform 0.25s ease"
+	xbutton.style.visibility = "hidden";
+}
+
+</script>
+
+
+</body>
+</html>

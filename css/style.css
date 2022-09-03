@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	text-decoration-style: none;
+	margin:0;
+	padding:0;
+	max-width: 100%;
+    height: auto;
+}
+
+/* Font families used:
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+
+h1{
+	font-family: 'Lobster', cursive;
+	font-size: 92px;
+	color: white;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	padding-top: 80px;	
+	text-align: center;
+}
+
+h2{
+	font-family: 'Josefin Slab', serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #44593A;
+}
+
+h3{
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 40px;
+	text-transform: capitalize;
+
+}
+h4{
+	font-family: 'Josefin Slab', serif;
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	color: #44593A;
+	background-color: #C9D5C3;
+}
+
+h5{
+	font-family: 'Josefin Slab', serif;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: italic;
+	color: #44593A;
+}
+
+p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: white;
+
+}
+
+a:hover{
+	text-decoration: none; 
+}
+
+/* HEADER */ 
+
+/* Navigation */
+
+.navbar-brand{
+	padding-top: 30px;
+	padding-right: 150px;
+}
+
+.navbar-header{}
+
+.navbar{
+	margin: 0% 0% 3% 7%;
+}
+
+.navbar-nav li{
+	padding: 0px 20px;
+}
+
+.nav-link{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: #44593A;
+}
+
+.nav-link:hover{
+	color: #9EAC98;
+}
+
+.fa-camera-retro {
+	color: #44593A;
+	display: inline-block;
+	float:left;
+	font-size: 25px;
+	margin: 0px 10px 15px 0px; 
+}
+
+.fa-long-arrow-alt-right{
+	color: #44593A;
+	font-size: 30px;
+}
+
+.responsive{
+	max-width: 100%;
+	height: auto;
+}
+
+.xbutton{
+	top:0;
+	right:0;
+	visibility:hidden;
+}
+
+
+/* End Navigation */
+
+
+.background{
+	width:100%;
+	height:auto;
+	background-image: url("../images/background.jpg");
+	opacity: 0.8;
+	z-index: -1000;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.container-fluid{
+	padding-top:40px;
+}
+
+
+
+.header-text{
+	margin: 3% 15% 3% 15%;
+
+}
+
+.subtext{
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+/* intro-container */
+.intro-container{
+	background-color: #C9D5C3; 
+}
+
+.text-container{
+	margin: 3% 15% 3% 15%;
+	padding: 20px;
+}
+/* END intro container */
+
+/* END HEADER */
+
+
+
+/* album-container */
+.album-container{
+	padding: 20px;
+	margin: 3% 15% 3% 15%;
+	text-align:center;
+}
+/* END album-container */
+
+/* railway container */
+.full-width-container{
+	width:100%;
+	display:inline-block;
+}
+
+.full-width-container img{
+	position:absolute;
+	width: 100%; 
+	height:70%;
+	object-fit: cover;
+	opacity: 0.9;
+	z-index: -2;
+
+
+
+
+}	
+/* END railway container */
+
+
+/*------ CONTACT FORM-------*/
+#form {
+	padding: 2rem;
+	background: #228B22;
+}
+
+#form input[type='text'] {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+
+.error {
+	background: #800000;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    font-size: 15px;
+	color:#44593A;
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid black; /* Black border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1px; /* Add a top margin */
+    margin-bottom: 1px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit]{
+	color: #44593A;
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+	padding: 3px;
+	cursor: pointer;
+	border: none;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    color: black;
+}
+
+ .fa-instagram{
+ 	color: white;
+ 	font-size: 20px;
+	display: inline-block;
+	float:left;
+	margin: 0px 10px 15px 10px; 
+ }
+
+ .fa-facebook-f{
+ 	color: white;
+	display: inline-block;
+	font-size: 20px;
+	float:left;
+	margin: 0px 10px 15px 10px; 
+ }
+/* END CONTACT FORM */
+
+
+
+/* Thank you page (after contact form is filled)*/
+.back{
+	font-family: 'Josefin Slab', serif;
+	padding: 10px 40px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #44593A;
+	box-shadow: none;
+
+	/* Flexbox :) */
+	margin: 0;
+	position: absolute;
+	top:50%; left:50%; 
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.back a {
+	text-decoration: none;
+	color: #44593A;
+}
+
+.back a:hover{
+	color: black;
+}
+
+@media screen and (max-width: 990px){
+	.navbar-toggler{
+		background-color: #44593A;
+	}
+	.nav-link{
+		color: white;
+		font-weight: normal;
+		background-color: #44593A;
+		
+	}
+	#navbarSupportedContent ul li a{
+		padding: 10px 30px;
+	}
+
+	
+}
+
+/* end of Thank you page*/
+
+/* -----------------------VISITED DESTINATION PAGE ----------------------------*/
+
+.destination-container{
+	padding: 30px 0px;
+}
+
+/* ----------------------- END VISITED DESTINATION PAGE ----------------------------*/
+
+/* -----------------------DREAM DESTINATION PAGE ----------------------------*/
+h3.ctact{
+	text-transform: capitalize;
+	color: white; 
+	font-size: 45px;
+	font-family: 'Poppins', sans-serif;
+	font-style: bolder;
+	letter-spacing: 4px;
+	display: flex;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+	h3.ctact{
+		font-size: 30px
+	}
+}
+
+h5.ctact{
+	font-size: 20px;
+	color:white;
+}
+
+p.ctact{
+	font-size: 13px;
+	color: white;
+	font-style: bold;
+}
+
+.contact-container{
+	padding: 3% 15% 3% 15%;
+	display: block;
+
+}
+
+.destination-container{
+	padding: 3% 5% 3% 5%;
+	display: block;
+}
+
+.images{
+	width: 500px;
+	height:500px;
+}
+
+.destination-container .row .col-sm-6 img{
+	max-width: 100%;
+	height:100vh;
+}
+
+/* -----------------------END DREAM DESTINATION PAGE ----------------------------*/
+
+
+
+/* ------CUBA, MEXICO, CANADA IMAGE CONTAINERS--------*/
+.photo-gallery{
+	margin: 3% 5% 3% 5%;
+
+}
+
+.roww {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 60%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 780px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+/* ------END : CUBA, MEXICO, CANADA IMAGE CONTAINERS--------*/
+
+/* ------- Ajustement for hamburger icon ------*/
+.navbar-toggle.collapsed{
+	border: none;	
+}
+.navbar-toggle.collapsed:hover{
+	opacity: 0.5;
+}
+
+.fa-bars{
+	outline:none;
+	color: white;
+	border:none;
+}
+
+/*-----END OF hamburger icon styling---- */
+
+
+/*-----ANIMATION---- */
+
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__slideInRight {
+  --animate-duration: 5s;
+}
+
+
+/*-----END ANIMATION---- */
+
+
+/* FOOTER */
+footer{
+	background-color: #C9D5C3;
+	width: 100%;
+}
+
+.white-space{
+	padding-bottom: 300px;
+
+}
+
+.strip{
+	background-color: #C9D5C3;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+/* END FOOTER */
+
+@media screen and (min-width: 300px) and (max-width: 550px){
+	.album-container .row .col-sm-4{
+
+	}
+
+}
+

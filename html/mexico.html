@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mexico</title>
+
+
+	<!-- Bootstrap, JQuery, css, font-awesome, favascript links are all in needed_ext.html -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+	<!-- For social media icons -->
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+	<!-- My files -->
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+</head>
+
+
+<div class="background">
+	<body data target="#navbarResponsive">
+	 
+	<!-- Navigation --> 
+	<nav class="navbar navbar-expand-lg" role ="navigation">  
+	<a class="navbar-brand" href="#"><i class="fa fa-camera-retro" aria-hidden="true" ></i><h5>Zeina <br> Adi</h5></a>
+	<div class = "navbar-header">
+		<button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class ="fa fa-bars"></i>
+		<!--For disability -->
+			<span class = "sr-only">Toggle navigation</span>
+			<span class = "icon-bar"></span>
+			<span class = "icon-bar"></span>
+			<span class = "icon-bar"></span>
+		</button>
+		
+	</div>
+
+	<div class ="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" data-toggle = "dropdown"> Visited Destinations </a>
+				<div class="dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
+					<a class = "dropdown-item" href = "cuba.html">Cuba</a>
+					<a class = "dropdown-item" href = "mexico.html">Mexico</a>
+					<a class = "dropdown-item" href = "canada.html">Canada</a>
+				</div>
+			</li>
+
+			<li class="nav-item"><a class="nav-link" href="dream_destinations.html">Dream Destinations</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+			
+		</ul>
+	</div>
+</nav>
+	<!-- Navigation ENDS--> 
+
+
+	<div class = "header-text">
+		<h1>Puerto Vallarta, Mexico</h1>
+		<center><h4>June, 2018</h4></center>
+	</div>
+</div>
+<!-- END header -->
+
+
+<!----------- Modal class ------------> 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<!-----------END Modal class ------------> 
+
+
+
+<!-- Picture gallery -->
+<div class="photo-gallery">
+<div class="roww">
+	<div class="column">
+
+	<img id = "myImg" src="../images/visited_destinations/mexico1.jpg" alt = "Mexico 1">
+	<img id = "myImg" src="../images/visited_destinations/mexico2.jpg" alt = "Mexico 2">
+	<img id = "myImg" src="../images/visited_destinations/mexico3.jpg" alt = "Mexico 3">
+	<img id = "myImg" src="../images/visited_destinations/mexico4.jpg" alt = "Mexico 4">
+	</div>
+
+	<div class="column">
+
+		<img id = "myImg" src="../images/visited_destinations/mexico5.jpg" alt = "Mexico 5">
+		<img id = "myImg" src="../images/visited_destinations/mexico6.jpg" alt = "Mexico 6">
+		<img id = "myImg" src="../images/visited_destinations/mexico7.jpg" alt = "Mexico 7">
+		<img id = "myImg" src="../images/visited_destinations/mexico8.jpg" alt = "Mexico 8">
+		<img id = "myImg" src="../images/visited_destinations/mexico9.jpg" alt = "Mexico 9">
+	</div>
+</div>
+</div>
+<!-- END picture gallery -->
+
+<!-- MODAL IMAGES JS -->
+<script type = "text/Javascript">
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+<!-- END MODAL IMAGES JS-->
+
+<!-- Start Footer -->
+<footer class>
+	<div class="strip">©2020 by Zeina Adi.</div>
+
+</footer>
+<!-- End Footer -->
+
+
+</body>
+</html>
