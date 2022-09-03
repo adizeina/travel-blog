@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Thank you Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cuba</title>
 
-	<!-- Bootstrap, JQuery, css, font-awesome, favascript links are all in needed_ext.php -->
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Optional JavaScript -->
@@ -18,26 +18,22 @@
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
 
 	<!-- My files -->
-	<link href="../css/style.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
 	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 
 </head>
 
-<body>
+
+<div class="background">
+	<body data-spy="scroll" data target="#navbarResponsive"> <!-- data-spy="scroll" data target="#navbarResponsive" This is to keep the header as we keep scrolling --> 
 
 	<!-- Navigation --> 
 	<nav class="navbar navbar-expand-lg" role ="navigation">  
 	<a class="navbar-brand" href="#"><i class="fa fa-camera-retro" aria-hidden="true" ></i><h5>Zeina <br> Adi</h5></a>
 	<div class = "navbar-header">
-		<button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class ="fa fa-bars"></i>
-		<!--For disability -->
-			<span class = "sr-only">Toggle navigation</span>
-			<span class = "icon-bar"></span>
-			<span class = "icon-bar"></span>
-			<span class = "icon-bar"></span>
-		</button>
-		
+		<button class="navbar-toggler" type ="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class ="fa fa-bars"></i></button>	
 	</div>
 
 	<div class ="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,7 +41,7 @@
 			<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
 			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id = "navbarDropdownMenuLink" data-toggle = "dropdown"> Visited Destinations </a>
 				<div class="dropdown-menu" aria-labelledby = "navbarDropdownMenuLink">
-					<a class = "dropdown-item" href = "cuba.html">Cuba</a>
+					<a class = "dropdown-item" href = "#">Cuba</a>
 					<a class = "dropdown-item" href = "mexico.html">Mexico</a>
 					<a class = "dropdown-item" href = "canada.html">Canada</a>
 				</div>
@@ -58,11 +54,37 @@
 	</div>
 </nav>
 	<!-- Navigation ENDS--> 
-	<div class = "header-text"><h2> Thank you. I will get back to you very soon! </h2>
 
-	<button class="back"><a href="index.php">Go Back to Home Page</a></button>
+	<div class = "header-text">
+		<h1>Cayo Coco, Cuba</h1>
+		<center><h4>March, 2017</h4></center>
 	</div>
-	<div class="white-space"></div>
+</div>
+<!-- END header -->
+
+
+<!-- Photo Gallery Cuba --> 
+<div class="photo-gallery">
+<div class="roww">
+	<div class="column">
+	<button class ="xbutton" onclick="resetImg()">X</button>
+	<img src="./images/visited_destinations/cuba1.jpg" alt = "Cuba 1" onclick = "enlargeImg()" id = "img1">
+	<img src="./images/visited_destinations/cuba2.jpg" alt = "Cuba 2">
+	<img src="./images/visited_destinations/cuba3.jpg" alt = "Cuba 3">
+	<img src="./images/visited_destinations/cuba4.jpg" alt = "Cuba 4">
+	</div>
+
+	<div class="column">
+
+		<img src="./images/visited_destinations/cuba5.jpg" alt = "Cuba 5">
+		<img src="./images/visited_destinations/cuba6.jpg" alt = "Cuba 6">
+		<img src="./images/visited_destinations/cuba7.jpg" alt = "Cuba 7">
+	</div>
+</div>
+</div>
+<!-- END Photo Gallery Cuba --> 
+
+
 
 <!-- Start Footer -->
 <footer class>
@@ -70,6 +92,24 @@
 
 </footer>
 <!-- End Footer -->
+
+
+<script>
+img = document.getElementById("img1");
+function enlargeImg(){
+	img.style.transform = "scale(1.5)";
+	img.style.transition = "transform 0.25s ease";
+	xbutton.style.visibility = "visible";
+}
+
+function resetImg(){
+	img.style.transform = "scale(1);"
+	img.style.transition = "transform 0.25s ease"
+	xbutton.style.visibility = "hidden";
+}
+
+</script>
+
 
 </body>
 </html>
